@@ -13,6 +13,10 @@ I think blogged about my findings here:
 
 * http://tinyurl.com/jquery-fun-with-twitter-api
 
+The demo page is here:
+
+* http://bit.ly/twitter-search-with-jquery-demo 
+
 ## Installation ##
 
 ### Short Story ###
