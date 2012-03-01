@@ -1,7 +1,7 @@
 Introduction
 ============
 
-## Testing Twitter API with jQuery and jSON ##
+## Fun with the Twitter Search API and jQuery ##
 
 I admit, I'm an API junkie. Who else in their spare time rips open a SOAP, XML-RPC, RSS &/or web 
 service just for fun on a Saturday night? I know, I need help.
@@ -40,22 +40,22 @@ The script, in its current implementation, assumes that your web page:
 
 Below is an example snip of the bare minimum to get things rolling:
 <pre>
-	<html>
-	<head>
+	&lt;html&gt;
+	&lt;head&gt;
 		...
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
-		<link href="twitter-search-with-jquery.css" media="screen" rel="stylesheet" type="text/css" />
+		&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;
+		&lt;link href="twitter-search-with-jquery.css" media="screen" rel="stylesheet" type="text/css" /&gt;
 		...
-	</head>
-	<body>
+	&lt;/head&gt;
+	&lt;body&gt;
 		...
-		<h2 id="countdown">Seconds until the next refresh: <span>120</span></h2>
-		<input type="hidden" id="twittersearch" value="social media" />
-		<div id="twitterresults">no results yet</div>
+		&lt;h2 id="countdown"&gt;Seconds until the next refresh: &lt;span&gt;120&lt;/span&gt;&lt;/h2&gt;
+		&lt;input type="hidden" id="twittersearch" value="social media" /&gt;
+		&lt;div id="twitterresults"&gt;no results yet&lt;/div&gt;
 		...
-		<script src="twitter-search-with-jquery.js" type="text/javascript"></script>
-	</body>
-	</html>
+		&lt;script src="twitter-search-with-jquery.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/body&gt;
+	&lt;/html&gt;
 </pre>
 
 
