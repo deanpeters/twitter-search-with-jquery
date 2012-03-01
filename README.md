@@ -21,7 +21,7 @@ The demo page is here:
 
 ### Short Story ###
 
-In theory, you should be able to run the test file out-of-the-box with the following URL in your browser:
+In theory, you should be able to run the test files (note the plural) out-of-the-box with the following URL in your browser:
 
 * file:///{CHANGE-THIS-PATH-TO-MATCH-YOUR-FILESYSTEM}/twitter-search-with-jquery/twitter-search-with-jquery.html
 
