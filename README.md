@@ -58,6 +58,7 @@ Below is an example snip of the bare minimum to get things rolling:
 	&lt;/html&gt;
 </pre>
 
+Your mileage may vary
 
 ## Observations ## 
 
@@ -66,8 +67,10 @@ certainly not all #HashTags are created equal. Meaning, it took quiet a few data
 broad range to come up with the follwing regular expressions that allowed us to identify, extract,
 and then leverage URLs and #HashTags in tweets:
 
+<pre>
   var urirex = /(https?):\/\/+([\w\d:#@%\/;$()~_?\+-=\\\.&]*)/g;				// url regex
   var hashrex = /\#+([\w\d:#@%/;$()~_?\+-=\\\.&]*)/g;							// hash tag regex
+</pre>
 
 Everything else was relatively straight-forward.
 
@@ -75,15 +78,15 @@ Everything else was relatively straight-forward.
 
 Wow, where do I begin? This list could be so long because I wrote up this script in a single night, but for starters:
 
-* convert code into a standard jQuery module, there's not much left to do in that realm, so do this first
-* the image twitter-search-background.gif is a liar, there is no search/form display, so do this second
-* we got the script at the bottom of the page to insure the DOM is loaded, let's make the $(document).ready approach the third fix
-* ad a field to define the duration of the search so it's not hard-coded into the page or script
-* allow users to define the id of the container that is currently hard-coded id='countdown'
-* allow users to define the id of the input field that is currently hard-coded id='twittersearch'
-* allow users to define the id of the container that is currently hard-coded id='twitterresults'
-* think about perhaps getting away from a form/input fields altogether, so there's an init method called first
-* see what can be done with regards to catching-n-throwing errors returned
-* prevent users from getting a 'timeout' due to countdown durations that are too short
-* do we need to convert the output into an HTML5 figure, or at least offer the option?
+# convert code into a standard jQuery module, there's not much left to do in that realm, so do this first
+# the image twitter-search-background.gif is a liar, there is no search/form display, so do this second
+# we got the script at the bottom of the page to insure the DOM is loaded, let's make the $(document).ready approach the third fix
+# ad a field to define the duration of the search so it's not hard-coded into the page or script
+# allow users to define the id of the container that is currently hard-coded id='countdown'
+# allow users to define the id of the input field that is currently hard-coded id='twittersearch'
+# allow users to define the id of the container that is currently hard-coded id='twitterresults'
+# think about perhaps getting away from a form/input fields altogether, so there's an init method called first
+# see what can be done with regards to catching-n-throwing errors returned
+# prevent users from getting a 'timeout' due to countdown durations that are too short
+# do we need to convert the output into an HTML5 figure, or at least offer the option?
 
