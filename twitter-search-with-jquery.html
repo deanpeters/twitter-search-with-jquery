@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Testing the Twitter API with jQuery and jSon</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    twitter-search-with-jquery.html
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ DESCRIPTION:
+ 
+ 		the demo page for twitter-search-with-jquery.js
+ 		
+ ASSUMPTIONS:
+ 
+		you have the accompanying .js, .css & .gif in same path as this file ...
+		... or you've modified those paths in the demo below
+
+ DEPENDENCIES:
+ 		
+		jquery.min.js (at minimum 1.3.2)
+ 		twitter-search-background.js
+ 		twitter-search-background.css
+ 		twitter-search-background.gif (via .css file)
+
+ SYNTAX:
+ 
+       to test it locally, try:
+       	file:///<CHANGE-THIS-PATH-TO-MATCH-YOUR-FILESYSTEM>/twitter-search-with-jquery/twitter-search-with-jquery.html
+
+ TO DO:
+ 
+       do we want to move this more into an HTML5 / <figure> approach?
+
+ LICENSE:
+ 		twitter-search-with-jquery.html by Dean Peters is licensed under a 
+		Creative Commons Attribution-NonCommercial-ShareAlike 3.0 
+		United States License. For more details, read here:
+		http://creativecommons.org/licenses/by-nc-sa/3.0/us/
+
+ WARANTEE:
+		absolutely none. use at your own peril
+
+ KVETCH:
+		got a comment, complaint, criticism or contribution?
+		bit.ly/twitter-search-with-jquery 
+		http://twitter.com/deanpeters
+		http://healyourchurchwebsite.com
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+<!-- note 1 of 6, if you want css styling similar to what I used for this demo -->
+<link href="twitter-search-with-jquery.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="pageContainer">
+<h1>Testing Twitter API with jQuery and jSon</h1>
+
+<!-- - - - - - - - - - - - - - if you don't cut-n-paste anything else - - - - - - - - - -   -->
+<div id="contains-required-elements-and-ids">
+	<!-- note 2 of 6, you need a container id='countdown' if you want to show the countdown -->
+	<h2 id="countdown">Seconds until the next refresh: <span>120</span></h2>
+	<!-- note 3 of 6, important! this is what defines the search value -->
+	<input type="hidden" id="twittersearch" value="social media" />
+	<!-- note 4 of 6, also important! you need this ID as a place for the script to put results -->
+	<div id="twitterresults">no results yet</div>
+</div>
+<!--  - - - - - - - - - - end of snip point - - - - - - - - - - - -  -->
+
+<!-- note 5 of 6, change the src= path of the link below to match the location of wher you put the script -->
+<script src="twitter-search-with-jquery.js" type="text/javascript"></script>
+<!-- note 6 of 6, I put the script at the bottom of the page by design so the above IDs are already in the DOM -->
+
+<div>
+<h4>Return ...
+... to <a href="http://tinyurl.com/jquery-fun-with-twitter-api" title="click to return to the original post">the original post</a>.
+</h4>
+</div>
+
+
+</div><!-- /#pageContainer -->
+
+</body>
+</html>
+
+
